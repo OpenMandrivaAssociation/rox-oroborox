@@ -1,6 +1,6 @@
 %define name rox-oroborox
 %define version 0.9.7.9
-%define release %mkrel 5
+%define release %mkrel 6
 %define oname OroboROX
 
 Summary: Window Manager for the ROX desktop
@@ -10,7 +10,7 @@ Release: %{release}
 Source0: http://roxos.sunsite.dk/dev-contrib/guido/%{oname}-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/Other
-Url: http://kymatica.bitminds.net/rox/OroboROX/
+Url: http://roscidus.com/desktop/OroboROX
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libsm-devel
 BuildRequires: libxrandr-devel
@@ -38,7 +38,7 @@ chmod 644 Configure/OroboScheme/icon-template.svg
 
 %build
 export CC="gcc -L%_prefix/X11R6/lib"
-./AppRun ||:
+./AppRun --compile
 
 %install
 rm -rf $RPM_BUILD_ROOT
