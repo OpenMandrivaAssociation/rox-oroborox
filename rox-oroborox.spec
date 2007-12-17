@@ -11,7 +11,6 @@ Source0: http://roxos.sunsite.dk/dev-contrib/guido/%{oname}-%{version}.tar.bz2
 License: GPL
 Group: Graphical desktop/Other
 Url: http://roscidus.com/desktop/OroboROX
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libsm-devel
 BuildRequires: libxrandr-devel
 BuildRequires: libxinerama-devel
