@@ -1,6 +1,6 @@
 %define name rox-oroborox
 %define version 0.9.7.9
-%define release %mkrel 9
+%define release %mkrel 10
 %define oname OroboROX
 
 Summary: Window Manager for the ROX desktop
